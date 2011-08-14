@@ -35,5 +35,11 @@ class ElevatorTests extends GroovyTestCase {
     void testCantGoFromGroundToFourth(){
         assertTrue(!elevator.changeStateTo("fourth"))
     }
+    
+    void testGroundToSecondToFourthStaysInSecond(){
+        elevator.changeStateTo("second")
+        elevator.changeStateTo("fourth") // shouldn't change to 4th from 2nd
+        assertTrue(elevator.state == 'second')
+    }
 
 }
