@@ -3,7 +3,8 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 
-grails.plugin.location.gestate = "/home/denis/Proyectos/shuntyard/Gestate/Gestate"
+// Only for local development
+// grails.plugin.location.gestate = "/home/denis/Proyectos/shuntyard/Gestate/Gestate"
 
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
