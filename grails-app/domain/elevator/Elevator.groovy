@@ -51,4 +51,6 @@ class Elevator extends Gestate {
         return gestateService.changeTo(this, state)
     }
     
+    String toString(){ "[Elevator ${this.id} on ${state} floor]"  }
+    
 }
