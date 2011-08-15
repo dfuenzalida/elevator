@@ -5,7 +5,7 @@
 
 State = ${elevator.state}
 
-<gestate:change model="${elevator}" to="second" controller="elevate" action="index" />
+<gestate:change model="${elevator}" to="second" controller="elevate" action="index" class="super" style="color: green" />
 
 <hr>
 
