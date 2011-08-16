@@ -1,3 +1,5 @@
+import elevator.*
+
 class BootStrap {
 
     def init = { servletContext ->

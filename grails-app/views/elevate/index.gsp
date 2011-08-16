@@ -18,13 +18,14 @@
             <td>${elevator}</td>
             <td>${elevator.prettyState()}</td>
             <td>
+                <!-- only valid transitions will be rendered as links -->
                 <g:each var="nextState" in="${elevator._states.keySet()}">
                 <gestate:change model="${elevator}" to="${nextState}" 
                     controller="elevate" action="move" id="${elevator.id}" params="${[to: nextState]}" />
                 </g:each>
             </td>
             <td>
-                <a href="delete/${elevator.id}">delete elevator</a>
+                <g:link action="delete" id="${elevator.id}">delete elevator</g:link>
             </td>
         </tr>
         </g:each>
@@ -36,7 +37,7 @@
         
         <hr>
         
-        <a href="create">Create new elevator</a>
+        <g:link controller="elevate" action="create">Create new elevator</g:link>
 
     </body>
 </html>
