@@ -23,7 +23,6 @@ class ElevateController {
         redirect(action: index)
     }
     
-    // Move an elevator to the second floor
     def move = {
         def elevator = Elevator.get(new Integer(params.id))
         elevator.changeStateTo(params.to)
